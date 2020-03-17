@@ -1,0 +1,24 @@
+---
+title: Weather api test
+layout: base.html
+style: css/index.css
+---
+
+<div class="wrapper">
+    <h1>Weather app</h1>
+    <div class="weather">
+        <section class="main">
+            <h2>General info:</h2>
+            <p>Location: 9450, Belgium</p>
+            <p>{{ weather.weather[0].description}</p>
+            <p>temp {{ weather.main.temp }}</p>
+            <p>Windsnelheid: {{ weather.wind.speed }}</p>
+        </section>
+        <section class="temp">
+            <h2>Temperaturen</h2>
+            <p>Temperatuur: {{ weather.main.temp }}</p>
+            <p>Minimum temperatuur: {{ weather.main.temp_min }}</p>
+            <p>Maximum temperatuur: {{ weather.main.temp_max }}</p>
+        </section>
+    </div>
+</div>
